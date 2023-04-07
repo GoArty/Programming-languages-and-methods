@@ -1,0 +1,25 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+import java.util.stream.IntStream;
+
+public class Factorial {
+    public Factorial() {
+    }
+
+    public static void main(String[] var0) {
+        if (var0.length == 0) {
+            System.out.println("Usage: java Factorial x");
+        } else {
+            int var1 = Integer.parseInt(var0[0]);
+            IntStream var2 = IntStream.range(1, var1 + 1);
+            int var3 = var2.reduce(1, (var0x, var1x) -> {
+                return var0x * var1x;
+            });
+            System.out.println(var3);
+        }
+
+    }
+}
