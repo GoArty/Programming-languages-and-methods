@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Пример скрипта JavaScript</title>
+    </head>
+    <body>
+        <p id="myText">Этот текст будет заменен после нажатия кнопки</p>
+        <button onclick="changeText()">Нажми меня</button>
+        <script>
+            function changeText() {
+                document.getElementById("myText").innerHTML = "Текст успешно изменен!";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Пример скрипта JavaScript</title>
+    </head>
+    <body>
+        <input type="text" id="email" placeholder="Введите email">
+        <button onclick="checkEmail()">Проверить</button>
+        <p id="error"></p>
+        <script>
+            function checkEmail() {
+                var email = document.getElementById("email").value;
+                var regex = /\S+@\S+\.\S+/;
+                if (!regex.test(email)) {
+                    document.getElementById("error").innerHTML = "Некорректный email!";
+                } else {
+                    document.getElementById("error").innerHTML = "";
+                }
+            }
+        </script>
+    </body>
+</html>
